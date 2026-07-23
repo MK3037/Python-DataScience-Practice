@@ -1,0 +1,17 @@
+import pandas as pd
+people_dict = {
+    "first": ["Corey", "Jane", "John"], 
+    "last": ["Schafer", "Doe", "Doe"], 
+    "email": ["CoreyMSchafer@gmail.com", "JaneDoe@email.com", "JohnDoe@email.com"]
+}
+df=pd.DataFrame(people_dict)
+print(df,"\n\n")
+# print(df.iloc[[0]])
+
+# df.set_index('email',inplace=True)
+# print(df)
+# print(df.iloc[[0]])
+# print(df.loc[['CoreyMSchafer@gmail.com']])
+
+df.set_index('first',inplace=True)
+print(df.loc[['Corey'],['last','email']])

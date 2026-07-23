@@ -1,0 +1,16 @@
+#MARKET STATISTICS
+Stock Traded: 3,422
+Advances: 1,145
+Declines: 2,171
+Unchanged: 106
+No. of Stocks at 52 Week High:  155
+No. of Stocks at 52 Week Low: 59 
+No. of Stocks in Upper Circuit: 130
+No. of Stocks in Lower Circuit: 132
+
+#MARKET TURNOVER
+product: Total
+volume: 972.95 Cr
+value: 5,47,569.09
+open interest: 2.30 Cr
+updated on: 
