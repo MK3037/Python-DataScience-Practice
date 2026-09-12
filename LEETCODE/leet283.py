@@ -1,15 +1,58 @@
-'''Given an integer array nums, 
-move all 0's to the end of it while maintaining the relative order of the non-zero elements.'''
-def moveZeroes(nums):
-    last_non_zero = 0
-    
-    for i in range(len(nums)):
-        if nums[i] != 0:
-            nums[last_non_zero] = nums[i]
-            last_non_zero += 1
-    for i in range(last_non_zero, len(nums)):       #filling remianing with 0
-        nums[i] = 0
+nums = [2,0, 1, 0, 0,3, 12,13]
 
-nums = [0, 1, 0, 0, 3, 12]
-moveZeroes(nums)
-print(nums)
+def moveZeros(nums):
+    i=0
+    for j in range(len(nums)):
+        if nums[j]!=0:
+            nums[i],nums[j]=nums[j],nums[i]
+            i+=1
+    return nums
+
+print(moveZeros(nums))
+
+
+
+
+# i=0
+# j=0
+# [2, 0, 1, 0, 0, 3, 12, 13]
+# will compare
+
+# i=1
+# j=1
+# [2, 0, 1, 0, 0, 3, 12, 13]
+
+# i=1
+# j=2
+# [2, 0, 1, 0, 0, 3, 12, 13]
+# will compare
+
+# i=2
+# j=3
+# [2, 1, 0, 0, 0, 3, 12, 13]
+
+# i=2
+# j=4
+# [2, 1, 0, 0, 0, 3, 12, 13]
+
+# i=2
+# j=5
+# [2, 1, 0, 0, 0, 3, 12, 13]
+# will compare
+
+# i=3
+# j=6
+# [2, 1, 3, 0, 0, 0, 12, 13]
+# will compare
+
+# i=4
+# j=7
+# [2, 1, 3, 12, 0, 0, 0, 13]
+# will compare
+
+# i=5
+# j ends
+# [2, 1, 3, 12, 13, 0, 0, 0]
+
+
+

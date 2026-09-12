@@ -10,6 +10,7 @@ def GCDoptimized(x,y):              #since gcd(x,y)=gcd(x-ay,y)=gcd(r,y) where r
     while y:
         x, y = y, x % y
     return x
+
 def find_list_gcd(numbers):         #this part is for a list of numbers
     if not numbers:
         return 0

@@ -11,6 +11,7 @@ print(a.upper())        #convertinf string a to all upper case
 print(a.find('Lorem'))
 c=a.replace("Lorem","Mihir")       
 print(c)
+print(c.split())
 
 print(a[-3:-1])         #similarly print(a.lower()) for all lower case
 

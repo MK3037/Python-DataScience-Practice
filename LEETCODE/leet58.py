@@ -7,3 +7,12 @@ for i in range(len(s)):
     if s[i]==" " :
         x=0
 print(x)
+
+
+
+
+
+# class Solution(object):
+#     def lengthOfLastWord(self, s):
+#         s=s.split()
+#         return len(s[-1])

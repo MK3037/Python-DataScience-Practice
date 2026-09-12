@@ -1,4 +1,4 @@
-def lengthOfLongestSubstring(s):
+def lengthOfLongestSubstring(s):   #without duplicates
         left =0
         seen={}
         ma=0
