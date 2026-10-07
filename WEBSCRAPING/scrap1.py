@@ -1,5 +1,4 @@
 from bs4 import BeautifulSoup
-import requests
 import os
 os.chdir("C:\\Users\\purve\\OneDrive\\Desktop\\extra\\webscraping")
 with open("prac1.html") as html_file:

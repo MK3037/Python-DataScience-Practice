@@ -33,6 +33,11 @@ try:
     cursor.execute(insert_query)
     connection.commit()
 
+    update_query = """
+    UPDATE menu set price=300 where itemid=1"""
+    cursor.execute(update_query)
+    connection.commit()
+
     # 6. Fetch & Print Table Structure
     print("--- MENU TABLE STRUCTURE ---")
     cursor.execute("DESCRIBE menu")

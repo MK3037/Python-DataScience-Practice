@@ -7,11 +7,12 @@ class TreeNode:
     def __str__(self):
         return str(self.val)
 
+stack=[]
 def preOrderTraversal(node):
     if not node:
         return
     # Process/print the current node
-    print(node.val)
+    stack.append(node.val)
     # Traverse left
     preOrderTraversal(node.left)
     # Traverse right
@@ -36,3 +37,4 @@ node3.left = node10
 
 # Running the pre-order traversal starting from the root (node1)
 preOrderTraversal(node1)
+print(stack)
