@@ -1,6 +1,4 @@
 import mysql.connector as connector
-from mysql.connector import errorcode
-import pandas as pd
 
 try:
     connection = connector.connect(host="127.0.0.1", port=3306, user="root", password="mihir")
